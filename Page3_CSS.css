@@ -1,0 +1,38 @@
+* {
+  font-family: Tahoma, Arial, srif;
+}
+
+body{
+	background-color: #F5F5F5;
+	
+}
+
+#page-content{
+  background-color: #FFF;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 20px ;
+}
+
+.ibox {
+	width:100%;
+	height:5%;
+	color: white;
+}	
+.tbox {
+	width:100%;
+	height:20%;
+	color: white;
+}	
+input:hover{
+	background-color: #C0C0C0;
+}
+textarea:hover{
+	background-color: #C0C0C0;
+}
+.submit{
+	background-color: #339900;
+	color: white;
+	width: 10%;
+	height: 6%;
+}

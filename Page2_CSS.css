@@ -1,0 +1,36 @@
+
+body{
+	background-color: #F5F5F5;
+	
+}
+h1{
+		color: green;
+}
+
+#page-content{
+  background-color: #FFF;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-left: 20px ;
+  padding-right: 20px ;
+}
+
+pre{
+	font-size:16px;
+	background-color: black;
+	color: #D3D3D3;
+	padding: 20px ;
+}
+
+table{
+	border-collapse: collapse;
+	text-align: left;
+}
+
+th {
+    background-color: #404040	;
+    color: white;
+}
+.rowcol {
+	background-color: #F5F5F5;
+}
