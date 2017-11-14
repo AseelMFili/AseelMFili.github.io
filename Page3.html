@@ -10,25 +10,69 @@
 <h1>Submit</h1>
 <p>
 <label>Title: </label>
-<input class="ibox" type = "text" placeholder="Enter the title"> 
+<input id="title" class="ibox" type = "text" placeholder="Enter the title"> 
 </p>
 <p>
 <label>URL: </label>
-<input class="ibox" type = "url" placeholder="Enter the URL"> 
+<input id="URL" class="ibox" type = "url" placeholder="Enter the URL"> 
 </p>
 <p>
 <text>OR</text>
 </p>
 <p>
 <label>Text: 
-<textarea  class="tbox" name="text" rows="4" cols="50" placeholder="Write your text"></textarea>
+<textarea id="textbox" class="tbox" name="text" rows="4" cols="50" placeholder="Write your text"></textarea>
 </label>
 </p>
 
 <div>
-<button class="submit" type="submit" value="Submit">Submit</button>
+<button onclick="myFunction()" class="submit" type="submit" value="Submit">Submit</button>
 </div>
 
+<div id="alert">
+        <p id="errortitle"></p>
+        <p id="errorurl"></p>
+        <p id="errortextbox"></p>
+</div>
+</div>
+<script>
+    function myFunction() {
+       
+    var warning = document.getElementById("alert");
+    var title = document.getElementById("title");
+    var url = document.getElementById("URL");
+    var textbox = document.getElementById("textbox");
+   
+    var errortitle = document.getElementById("errortitle"); 
+    var errorurl = document.getElementById("errorurl"); 
+    var errortextbox = document.getElementById("errortextbox");
+    
+    if(title.value == "" || url.value == "" || textbox.value == ""){
+        if(title.value == ""){
+            errortitle.innerHTML = "Please enter the title!";
+            warning.style.visibility = "visible";
+        }else{
+            errortitle.innerHTML = "";
+        }
+        if(url.value == ""){
+            errorurl.innerHTML = "Please enter the URL!";
+            warning.style.visibility = "visible";
+        }else{
+            errorurl.innerHTML = "";
+        }
+        if(textbox.value == ""){
+            errortextbox.innerHTML = "Please enter a text!";
+            warning.style.visibility = "visible";
+        }else{
+            errortextbox.innerHTML = "";
+        }
+        }
+        else{
+            warning.style.visibility = "hidden";
+        }
+         
+        }
+    </script>
 
 </body>
 </html>

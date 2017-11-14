@@ -17,22 +17,31 @@ body{
 .ibox {
 	width:100%;
 	height:5%;
-	color: white;
+	color: black;
 }	
 .tbox {
 	width:100%;
 	height:20%;
-	color: white;
+	color: black;
 }	
 input:hover{
 	background-color: #C0C0C0;
+	color: white;
 }
 textarea:hover{
 	background-color: #C0C0C0;
+	color: white;
 }
 .submit{
 	background-color: #339900;
 	color: white;
 	width: 10%;
 	height: 6%;
+}
+#alert{
+	visibility: hidden;
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
+	margin-top: 5px;
 }
