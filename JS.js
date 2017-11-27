@@ -5,30 +5,6 @@ var slcted = document.getElementById("sort-news");
 var array = [];
 var secArr = [];
 
-function appnd() {
-    for (i = 0; i < 29; i++) {
-        var frstli = document.createElement("li");
-        var secul = document.createElement("ul");
-        var secli = document.createElement("li");
-        var link = document.createElement("a");
-
-        
-        frstul.appendChild(frstli);
-        secul.appendChild(secli);
-        frstli.appendChild(link);
-        frstli.appendChild(secul);
-
-
-        link.innerHTML = secArr[i].title;
-        link.href = secArr[i].url;
-
-        var time = new Date(secArr[i].time * 1000);
-
-        secli.innerHTML = "Score: ( " + secArr[i].score + " ) Time:  ( " + time + " ) Comments: (  " + secArr[i].descendants + " )";
-        frstli.className = "bb";
-        secli.className = "b";
-    }
-}
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -154,4 +130,31 @@ function sortByDate() {
         }
         return 0;
     });
+}
+
+
+
+function appnd() {
+    for (i = 0; i < 29; i++) {
+        var frstli = document.createElement("li");
+        var secul = document.createElement("ul");
+        var secli = document.createElement("li");
+        var link = document.createElement("a");
+
+        
+        frstul.appendChild(frstli);
+        secul.appendChild(secli);
+        frstli.appendChild(link);
+        frstli.appendChild(secul);
+
+
+        link.innerHTML = secArr[i].title;
+        link.href = secArr[i].url;
+
+        var time = new Date(secArr[i].time * 1000);
+
+        secli.innerHTML = "Score: ( " + secArr[i].score + " ) Time:  ( " + time + " ) Comments: (  " + secArr[i].descendants + " )";
+        frstli.className = "bb";
+        secli.className = "b";
+    }
 }
