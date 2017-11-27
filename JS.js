@@ -15,9 +15,9 @@ function appnd() {
         link.innerHTML = secArr[i].title;
         link.href = secArr[i].url;
 
-        var time = new Date(secArr[i].time*1000);
+        var time = new Date(secArr[i].time * 1000);
 
-        secli.innerHTML = "Score: ( " + secArr[i].score + " ) Time:  ( " + time + " ) Comments: (  " + secArr[i].descendants+" )";
+        secli.innerHTML = "Score: ( " + secArr[i].score + " ) Time:  ( " + time + " ) Comments: (  " + secArr[i].descendants + " )";
         frstli.className = "bb";
         secli.className = "b";
     }
@@ -39,18 +39,15 @@ slcted.onchange = function () {
     } else if (slcted.value == "score") {
         frstul.innerHTML = null;
         sortByScore();
-
         appnd();
     } else if (slcted.value == "comments") {
-        frstul.innerHTML = null; 
+        frstul.innerHTML = null;
         sortByComments();
-
         appnd();
 
     } else if (slcted.value == "newest") {
-        frstul.innerHTML = null; 
+        frstul.innerHTML = null;
         sortByDate();
-
         appnd();
 
     }
@@ -119,7 +116,7 @@ window.onload = function () {
 
 }
 
- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function sortByComments() {
 
