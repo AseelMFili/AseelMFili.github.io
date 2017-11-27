@@ -1,3 +1,9 @@
+var frstul = document.getElementById("firstul");
+var txt = document.getElementById("txt");
+var btn = document.getElementById("btn");
+var slcted = document.getElementById("sort-news");
+var array = [];
+var secArr = [];
 
 function appnd() {
     for (i = 0; i < 29; i++) {
@@ -27,12 +33,7 @@ function appnd() {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var frstul = document.getElementById("firstul");
-var txt = document.getElementById("txt");
-var btn = document.getElementById("btn");
-var slcted = document.getElementById("sort-news");
-var array = [];
-var secArr = [];
+
 
 slcted.onchange = function () {
     if (slcted.value == "none") {
