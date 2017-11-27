@@ -7,8 +7,6 @@ var secArr = [];
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
 slcted.onchange = function () {
@@ -40,8 +38,6 @@ window.onload = function () {
             var json = JSON.parse(xhttp.responseText);
             arrfun(json);
             SingleIDfun();
-
-
         }
     };
 
@@ -79,7 +75,7 @@ window.onload = function () {
             }
         };
 
-        xhttp.open("GET", "https:/hacker-news.firebaseio.com/v0/item/" + SingleID + ".json?print=pretty", true);
+        xhttp.open("GET", "https://hacker-news.firebaseio.com/v0/item/" + SingleID + ".json?print=pretty", true);
         xhttp.send();
     }
 
@@ -133,6 +129,8 @@ function sortByDate() {
 }
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 function appnd() {
     for (i = 0; i < 29; i++) {
@@ -146,7 +144,6 @@ function appnd() {
         secul.appendChild(secli);
         frstli.appendChild(link);
         frstli.appendChild(secul);
-
 
         link.innerHTML = secArr[i].title;
         link.href = secArr[i].url;
