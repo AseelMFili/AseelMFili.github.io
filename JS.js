@@ -1,15 +1,16 @@
 
 function appnd() {
-    for (i = 0; i < 30; i++) {
+    for (i = 0; i < 29; i++) {
         var frstli = document.createElement("li");
         var secul = document.createElement("ul");
         var secli = document.createElement("li");
         var link = document.createElement("a");
 
+        
+        frstul.appendChild(frstli);
         secul.appendChild(secli);
         frstli.appendChild(link);
         frstli.appendChild(secul);
-        frstul.appendChild(frstli);
 
 
         link.innerHTML = secArr[i].title;
