@@ -1,3 +1,31 @@
+
+function appnd() {
+    for (i = 0; i < 30; i++) {
+        var frstli = document.createElement("li");
+        var secul = document.createElement("ul");
+        var secli = document.createElement("li");
+        var link = document.createElement("a");
+
+        secul.appendChild(secli);
+        frstli.appendChild(link);
+        frstli.appendChild(secul);
+        frstul.appendChild(frstli);
+
+
+        link.innerHTML = secArr[i].title;
+        link.href = secArr[i].url;
+
+        var time = new Date(secArr[i].time*1000);
+
+        secli.innerHTML = "Score: ( " + secArr[i].score + " ) Time:  ( " + time + " ) Comments: (  " + secArr[i].descendants+" )";
+        frstli.className = "bb";
+        secli.className = "b";
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 var frstul = document.getElementById("firstul");
 var txt = document.getElementById("txt");
 var btn = document.getElementById("btn");
@@ -127,30 +155,4 @@ function sortByDate() {
         }
         return 0;
     });
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function appnd() {
-    for (i = 0; i < 30; i++) {
-        var frstli = document.createElement("li");
-        var secul = document.createElement("ul");
-        var secli = document.createElement("li");
-        var link = document.createElement("a");
-
-        secul.appendChild(secli);
-        frstli.appendChild(link);
-        frstli.appendChild(secul);
-        frstul.appendChild(frstli);
-
-
-        link.innerHTML = secArr[i].title;
-        link.href = secArr[i].url;
-
-        var time = new Date(secArr[i].time*1000);
-
-        secli.innerHTML = "Score: ( " + secArr[i].score + " ) Time:  ( " + time + " ) Comments: (  " + secArr[i].descendants+" )";
-        frstli.className = "bb";
-        secli.className = "b";
-    }
 }
